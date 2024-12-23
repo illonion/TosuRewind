@@ -1,3 +1,15 @@
+/* Fonts */
+@font-face {
+    font-family: "Made Outer Sans";
+    font-weight: 400;
+    src: url("../fonts/MADE\ OUTER\ SANS\ REGULAR\ PERSONAL\ USE.OTF")
+}
+
+:root {
+    --player-name-horizontal-spacing: 183px;
+}
+
+/* Whole Page */
 #main {
     position: absolute;
     top: 0;
@@ -5,4 +17,21 @@
     width: 1920px;
     height: 1080px;
     background-image: url("static/background.png")
+}
+
+/* Player names */
+.player-name {
+    position: absolute;
+    top: 17px;
+    font-size: 35px;
+    color: #0d002a;
+    font-family: "Made Outer Sans";
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+#player-name-left {
+    left: var(--player-name-horizontal-spacing);
+}
+#player-name-right {
+    right: var(--player-name-horizontal-spacing);
 }
