@@ -6,7 +6,7 @@
 }
 
 :root {
-    --player-name-horizontal-spacing: 183px;
+    --player-detail-horizontal-spacing: 183px;
 }
 
 /* Whole Page */
@@ -16,7 +16,10 @@
     left: 0;
     width: 1920px;
     height: 1080px;
-    background-image: url("static/background.png")
+    background-image: url("static/background.png");
+
+    font-family: "Made Outer Sans";
+    font-weight: 400;
 }
 
 /* Player names */
@@ -25,13 +28,18 @@
     top: 17px;
     font-size: 35px;
     color: #0d002a;
-    font-family: "Made Outer Sans";
-    font-weight: 400;
     letter-spacing: -2px;
 }
-#player-name-left {
-    left: var(--player-name-horizontal-spacing);
+
+/* Player Details */
+.player-detail {
+    position: absolute;
+    font-size: 18px;
+    color: white;
 }
-#player-name-right {
-    right: var(--player-name-horizontal-spacing);
-}
+.player-detail-left { left: var(--player-detail-horizontal-spacing); }
+.player-detail-right { right: var(--player-detail-horizontal-spacing); }
+
+/* Player Ranks and Seeds */
+.player-rank { top: 72px; }
+.player-seed { top: 90px; }
