@@ -4,7 +4,7 @@
     font-weight: 400;
     src: url("../fonts/MADE\ OUTER\ SANS\ REGULAR\ PERSONAL\ USE.OTF")
 }
-
+    q
 :root {
     --player-detail-horizontal-spacing: 183px;
 }
@@ -22,7 +22,24 @@
     font-weight: 400;
 }
 
-/* Player names */
+/* Player Profile Pictures */
+.player-profile-picture {
+    position: absolute;
+    top: 24px;
+    left: 17px;
+    width: 137px;
+    height: 137px;
+    clip-path: polygon(
+        15% 0%,
+        100% 0%,
+        100% calc(100% - 15%),
+        calc(100% - 15%) 100%,
+        0% 100%,
+        0% 15%
+    )
+}
+
+/* Player Names */
 .player-name {
     position: absolute;
     top: 17px;
